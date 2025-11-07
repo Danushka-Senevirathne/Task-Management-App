@@ -1,9 +1,12 @@
-import React from 'react'
+import { useSelector } from "react-redux";
+import TaskList from "../components/TaskList";
 
-function Completed() {
+export default function Completed() {
+  const tasks = useSelector((s) => s.tasks.items.filter(t => t.completed));
   return (
-    <div>Completed</div>
-  )
+    <div>
+      <h2 className="text-2xl font-semibold mb-4">Completed Tasks</h2>
+      <TaskList tasks={tasks} />
+    </div>
+  );
 }
-
-export default Completed

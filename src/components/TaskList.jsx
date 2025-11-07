@@ -1,9 +1,12 @@
-import React from 'react'
+import TaskItem from "./TaskItem";
 
-function TaskList() {
+export default function TaskList({ tasks }) {
+  if (!tasks.length) {
+    return <div className="text-center text-slate-500 py-8">No tasks found.</div>;
+  }
   return (
-    <div>TaskList</div>
-  )
+    <div className="space-y-3">
+      {tasks.map((t) => <TaskItem key={t.id} task={t} />)}
+    </div>
+  );
 }
-
-export default TaskList

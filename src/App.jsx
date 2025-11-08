@@ -23,5 +23,5 @@ export default function App() {
         © {new Date().getFullYear()} Task Manager • Built with React + Redux Toolkit + Tailwind
       </footer>
     </div>
-  );
+  ); 
 }

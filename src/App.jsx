@@ -5,6 +5,7 @@ import AddTask from "./pages/AddTask";
 import EditTask from "./pages/EditTask";
 import Completed from "./pages/Completed";
 import Pending from "./pages/Pending";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -19,9 +20,7 @@ export default function App() {
           <Route path="/pending" element={<Pending />} />
         </Routes>
       </main>
-      <footer className="bg-white border-t py-4 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Task Manager • Built with React + Redux Toolkit + Tailwind
-      </footer>
+    <Footer/>
     </div>
   ); 
 }

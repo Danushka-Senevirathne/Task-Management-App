@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
         <footer className="bg-white border-t py-4 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Task Manager • Built with React + Redux Toolkit + Tailwind
+        © {new Date().getFullYear()} Task Manager • Developed by Danushka Senevirathne
       </footer>
   )
 }
